@@ -1488,9 +1488,15 @@ message NetworkDevice {
         bool wireless = 4;
 }
 
+message BIOSKeyValue {
+        string key = 1;
+        string value = 2;
+}
 message BIOS {
         string vendor = 1;
         string version = 2;
+        // these are attributes that have different names depending on BIOS implementation/vendor
+        repeated BIOSKeyValue unstructured_attributes = 3;
 }
 
 message CPU {
