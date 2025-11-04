@@ -1521,5 +1521,7 @@ message ZInfoHardware {
 
   BIOS bios = 8;
   NUMA numa = 9;
+
+  string spec_sh = 10;
 }
 

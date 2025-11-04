@@ -103,4 +103,6 @@ message InventoryMsg {
 
         BIOS bios = 7;
         NUMA numa = 8;
+
+        string spec_sh = 9;
 }
